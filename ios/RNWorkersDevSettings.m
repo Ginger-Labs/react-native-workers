@@ -22,6 +22,11 @@
   return nil;
 }
 
+- (NSArray<NSString *> *)supportedEvents
+{
+  return @[@"message"];
+}
+
 - (instancetype)initWithData:(RNWorkersInstanceData *)data
 {
   if (self = [self init]) {
